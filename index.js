@@ -31,10 +31,9 @@ module.exports = {
             const key = parseInt(filterKey);
             if (isNaN(key)) {
                 const upperCaseKey = filterKey.toUpperCase();
-                return _.find(countryCodeList(), ['code', upperCaseKey]);
+                return _.find(this.countryCodeList(), ['code', upperCaseKey]);
             }
-    
-            return _.find(countryCodeList(), ['phone', key]);
+            return _.find(this.countryCodeList(), ['phone', key]);
 
         } catch (e) {
             return {};
@@ -43,7 +42,7 @@ module.exports = {
 
     phoneNumberValidation: (number, countryCode) => {
         try {
-            const country = countryCodeFilteredList(countryCode)
+            const country = this.countryCodeFilteredList(countryCode)
             const phoneNumber = phoneUtil.parse(number.split('+').join(''), country['code']);
 
             return {

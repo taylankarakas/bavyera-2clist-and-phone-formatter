@@ -1,6 +1,6 @@
 {
   "name": "bavyera-2clist-and-phone-formatter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Country Code List and Phone Formatter",
   "main": "index.js",
   "scripts": {
