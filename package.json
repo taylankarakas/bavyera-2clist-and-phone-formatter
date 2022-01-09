@@ -1,0 +1,29 @@
+{
+  "name": "bavyera-2clist-and-phone-formatter",
+  "version": "1.0.0",
+  "description": "Country Code List and Phone Formatter",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "phone",
+    "country",
+    "flag",
+    "number",
+    "validation",
+    "code"
+  ],
+  "author": "Atil Taylan Karakas <atiltaylankarakas@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "google-libphonenumber": "^3.2.26",
+    "lodash": "^4.17.21",
+    "react-country-flag": "^3.0.2",
+    "update-notifier": "^5.1.0"
+  }
+}
